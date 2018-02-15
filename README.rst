@@ -7,7 +7,7 @@ What is this repository for?
 
 To help with Docker documentation, to track this image, etc.
 
-This Docker image is a fork of `jupyter/datascience-notebook <https://hub.docker.com/r/jupyter/datascience-notebook/>`_ from the Docker Hub. It's basically the same except it also installs the `jupyter-python-tdd <https://github.com/Fandekasp/jupyter-python-tdd`_ NBExtension, which allows writing and running Python unittest test cases in a TDD mode within Jupyter Notebooks specifically.
+This Docker image is a fork of `jupyter/datascience-notebook <https://hub.docker.com/r/jupyter/datascience-notebook/>`_ from the Docker Hub. It's basically the same except it also installs the `jupyter-python-tdd <https://github.com/Fandekasp/jupyter-python-tdd>`_ NBExtension, which allows writing and running Python unittest test cases in a TDD mode within Jupyter Notebooks specifically.
 
 The files in this GitHub repo are intended for a Docker Build, to create the image properly. After that, it can be pushed to a Docker repo as a Docker image, and used by any users to run as a container with Docker.
 
