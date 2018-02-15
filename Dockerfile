@@ -1,4 +1,4 @@
-# Start with jupyter/datascience-notebook
+#Start with jupyter/datascience-notebook
 FROM jupyter/datascience-notebook
 
 # Set working directory to
@@ -9,6 +9,8 @@ WORKDIR /home/jovyan/work
 
 # Get and install nbextension
 RUN git clone https://github.com/Fandekasp/jupyter-python-tdd.git && cd jupyter-python-tdd && jupyter nbextension install tdd --user && jupyter nbextension enable tdd/main --user 
+RUN conda update pandas
+RUN conda install geopy textblob
 
 # Make port 80 available touworld outisde
 EXPOSE 80
